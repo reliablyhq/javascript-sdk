@@ -14,6 +14,7 @@ export class Client {
     public async getObjectives(): Promise<t.Objective[]> {
         let url = `https://${this.apiHost}/entities/${this.org}/reliably.com/v1/objective`
         let req = new Request(url, {
+            method: 'GET',
             headers: {
                 'Authorization': `Bearer ${this.token}`
             }
