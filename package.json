@@ -1,0 +1,23 @@
+{
+  "name": "javascript-sdk",
+  "version": "1.0.0",
+  "description": "Provides a mechanism to integrate a javascript application with Reliably",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reliablyhq/javascript-sdk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reliablyhq/javascript-sdk/issues"
+  },
+  "homepage": "https://github.com/reliablyhq/javascript-sdk#readme",
+  "devDependencies": {
+    "typescript": "4.4.2"
+  }
+}

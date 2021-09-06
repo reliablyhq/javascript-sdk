@@ -1,0 +1,19 @@
+name: build package
+
+on:
+  push
+
+env:
+  NODE_VERSION: 16
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          version: ${{ env.NODE_VERSION }}
+      - run: npm install
+      - run: npm run build
+      - run: npm test

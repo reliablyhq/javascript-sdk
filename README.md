@@ -1,2 +1,2 @@
 # javascript-sdk
-Javascript SDK that integrates with ReliablyHQ
+Provides a mechanism to integrate a javascript application with Reliably
