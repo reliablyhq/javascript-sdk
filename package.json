@@ -4,7 +4,8 @@
   "description": "Provides a mechanism to integrate a javascript application with Reliably",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "npm run build && node out/runner/index.js"
   },
   "repository": {
     "type": "git",
