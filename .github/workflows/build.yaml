@@ -15,5 +15,5 @@ jobs:
         with:
           version: ${{ env.NODE_VERSION }}
       - run: npm install
-      - run: npm run build
       - run: npm test
+      - run: npm run prepublishOnly
