@@ -6,7 +6,8 @@
   "private": false,
   "scripts": {
     "prepublishOnly": "tsc && rollup -c",
-    "start": "npm run build && node out/runner/index.js"
+    "start": "npm run build && node out/runner/index.js",
+    "test": "echo 'no tests'"
   },
   "repository": {
     "type": "git",
