@@ -5,7 +5,7 @@ let c = new Client("abc", "xyz")
 
 c.getObjectives()
 .then(objectives => {
-    return Promise.all(objectives.map(o => {
+    let promises = objectives.map(o => {
         let i: t.Indicator = {
             metadata: o.metadata,
             spec: {
@@ -16,5 +16,9 @@ c.getObjectives()
         }
 
         return c.putIndicator(i)
-    }))
+    })
+
+    return Promise.all(promises)
 })
+.then(() => console.log('requests complete!'))
+.catch(console.error)
