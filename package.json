@@ -1,6 +1,6 @@
 {
-  "name": "reliably-sdk",
-  "version": "1.0.0rc",
+  "name": "reliably-js-sdk",
+  "version": "0.0.1",
   "description": "Provides a mechanism to integrate a javascript application with Reliably",
   "main": "index.js",
   "private": false,
