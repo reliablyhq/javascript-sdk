@@ -1,6 +1,6 @@
 {
   "name": "javascript-sdk",
-  "version": "1.0.0",
+  "version": "1.0.0rc",
   "description": "Provides a mechanism to integrate a javascript application with Reliably",
   "main": "index.js",
   "private": false,
@@ -28,5 +28,8 @@
   "files": [
     "index.js",
     "index.d.ts"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
