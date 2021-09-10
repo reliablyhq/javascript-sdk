@@ -1,9 +1,9 @@
 {
-  "name": "reliably-js-sdk",
+  "name": "@reliablyhq/sdk",
   "version": "0.0.1",
   "description": "Provides a mechanism to integrate a javascript application with Reliably",
   "main": "index.js",
-  "private": false,
+  "private": "false",
   "scripts": {
     "prepublishOnly": "tsc && rollup -c",
     "test": "echo 'no tests'"
