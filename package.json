@@ -6,7 +6,6 @@
   "private": false,
   "scripts": {
     "prepublishOnly": "tsc && rollup -c",
-    "start": "npm run build && node out/runner/index.js",
     "test": "echo 'no tests'"
   },
   "repository": {
@@ -28,8 +27,5 @@
   "files": [
     "index.js",
     "index.d.ts"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  ]
 }
