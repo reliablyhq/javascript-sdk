@@ -1,9 +1,7 @@
-name: publish package
+name: test
 
 on:
-  release:
-    types:
-    - created
+  push
 
 env:
   NODE_VERSION: 16.x
@@ -17,6 +15,4 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - run: npm install
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm test
